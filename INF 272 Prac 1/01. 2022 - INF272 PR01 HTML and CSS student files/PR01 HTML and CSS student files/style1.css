@@ -1,0 +1,138 @@
+/* style main header */
+
+/* * {
+  box-sizing: border-box;
+} */
+.Main-header {       
+    width:75%;
+    background: rgba(200,200,200,0.7);    
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2pt ridge black;   
+    padding:5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  }
+
+/* Set the style of the navigation bar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#333;
+    width:100%;
+  }
+
+  .navbar li {
+      float:left;
+  }
+
+  .navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+  } 
+
+  .navbar::after {
+    content: "";
+    clear: both;
+    display: table;
+  } 
+
+  /* style the layout of the cardboxes using flex */
+  .clearfix {
+    display:flex;
+    flex-wrap:wrap;
+  }
+  
+
+/* Style cardbox */
+.cardbox {       
+    text-align: center;
+    
+    width:18%;    
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+    background: #cfd8dc;
+    border-radius: 25px;
+    border: 2px solid rgb(198, 199, 197);
+    overflow:visible;   
+
+}
+
+/* Define style of image */
+.cardbox img {   
+  display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 20px;
+    border: darkgrey 3px solid;
+    width:120px; /* speel rond met persentasie en px*/
+    height:180px; 
+    margin-left:auto;
+    margin-right:auto;
+    object-fit: fill;  /* speel rond met persentasie en px*/
+    margin-top: 3px;  
+    
+}
+
+
+
+.cardbox-content {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position:relative;
+    /* overflow: hidden; */
+    border: darkgrey 1px solid;
+    border-radius: 20px;
+    color: #132249;
+    margin-bottom: 4px;
+    margin-left: 1px;
+    margin-right: 1px;
+    background-color: lightgrey;
+    
+    opacity: 0.1;
+    /* transition is the property used to animate the change of opacity, over 0.25 seconds with the ease-out function after a 0 second delay  */
+    /* ease-out:specifies a transition effect with a slow end */
+    transition: opacity 0.9s ease-in-out;
+}
+
+/* Set style of headers in cardboxes */
+.cardbox h2 {
+    color: #2f3238;
+}
+
+/* when hovering over container-body-head, make the following changes to the immediate child h2 */
+  .cardbox-head:hover > h2{
+    color: #1b9ed6;
+    cursor: pointer;
+}
+
+ /* when hovering over the cardbox-head, display the content */
+/* .cardbox-head:hover > .cardbox-content{
+    display:block;
+} */
+
+/* when you hover over the head, set the style of the content  */
+.cardbox-head:hover > .cardbox-content  { 
+    opacity:1;     
+    
+     /* ease-in:specifies a transition effect with a slow start */
+      
+}
+
+
+  
+
+
+
+ 
